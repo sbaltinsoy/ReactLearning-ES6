@@ -7,7 +7,7 @@ import React, { Component } from 'react';
  * React, state ve props ile bilesenlerde veri akisini kontrol eder.
  * State ve props bileseni dinamik verilerle olusturmak icin kullanilir
  */
-
+//
 // ReactJS'de componentlara veri gondermek icin props kullanilir. (Immutable)
 // Immutable dan kasit sabit degismezlerdir
 
