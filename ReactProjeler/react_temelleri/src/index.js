@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Ders6';
+import App from './Ders7';
 
 ReactDOM.render(
   <React.StrictMode>
