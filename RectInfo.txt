@@ -1,0 +1,61 @@
+<?> ReactJS Nedir ? <?> 
+[x] ReactJs kullanici arayuzleri olusturmak icin Facebook ekibi tarafindan
+gelistirilmis bir javascript kutuphanesidir.
+[x] Component Tabanlidir 
+	- Component Nedir ? -
+	|x| Bir web sitesinde ve ya mobil bir uygulamanin arayuzunde akla
+	hayale gelebilecek her turlu bilesen aslinda bir componenttir.
+	|x| Kodu tekrar tekrar yazmak yerine uygulamanin diger sayfalarindada
+	componentleri kullanabiliyor olucaz.
+[x] JSX Syntax ini kullanir
+[x] ES6 
+[X] Yuksek Performans
+[x] Tekrar kullanabilirlik
+[x] MVC (Model - View - Controller) Mimarisinden daha cok view yapisini icerir
+[x] Tek yonlu veri baglama vardir
+	|x| Data yukaridan asagiya dogru yani ana componenttan cocuk componentlara
+	dogru akar.
+	|x| Bu sayede cocuk componentta yapacagimiz degisikler yukaridaki ana
+	componentimizi etkilememis olur.
+[x] Facebook, Dropbox, Mattermak, Atlassian, Airbnb, Instagram ...
+[x] Sanal Dom
+	|x| React i asil performansli yapan yapidir
+	|x| Normalde DOM kullanici bir degisiklik yaptiginda kendini komple
+	yeniliyor ve tekrardan render ediyor. 
+	-> Sanal DOM sayesinde sadece yapilan degisikligi render ediyor
+
+<?> JSX Nedir <??
+[x] JavaScript'in bir soz dizimi uzantisidir.
+[x] HTML ve JavaScript kodlarinin ayri dosyalarda tutularak teknolojilerin birbirinden
+yapay bir sekilde ayrilmasi yerine React, hem HTML hem de JavaScript kodu barindiran ve 
+birbirine gevsek bir sekilde bagli olan bilesenler (components) sayesinde ilgili islerin 
+ayrilmasini saglar.
+
+# Kod Ornek
+	const element = {
+	  <h1 className = "greeting">
+	    Hello, world!
+	  </h1>
+	};
+# Yukaridaki kod bir JSX kodudur JS JSX den bir sey anlamiyor
+# JSX in reacti kullanabilmesi icin bir kutuphaneye ihtiyac duyuyoruz.
+# kutuphenin yaptigi is yukaridaki JSON kodunu react formatina donusturmek olacaktir
+
+# Kod React
+	const element = React.createElement (
+	  'h1',
+	  {className = 'greeting'},  
+	  'Hello, world!'
+	);
+
+# Yukaridaki 2 kod parcasi birbirinin aynisidir
+# Yukaridaki kod DOM un anlayabilecegi sekle donusturuluyor
+// Bu yapi basitlestirilmistir
+	const element = React.createElement {
+	  type: 'h1',
+	  props:{
+	    className: 'greeting',  
+	    children: 'Hello, world!'	
+	  }  
+	};
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
