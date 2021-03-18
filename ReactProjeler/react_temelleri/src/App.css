@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: pink;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
