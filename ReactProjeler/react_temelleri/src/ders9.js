@@ -1,32 +1,17 @@
-import React, { Component } from 'react';
-
-class App extends Component {
-  constructor() {
-    super();
-    this.state = { data: [] };
-  }
-
-  async componentDidMount() {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/todos`);
-    const json = await response.json();
-    this.setState({
-      data: json,
-      isLoading: false,
-    });
-  }
-
-  render() {
-    const { data } = this.state;
-    return (
-      <div>
-        <ul>
-          {data.map((el) => (
-            <li>{el.title}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-}
-
-export default App;
+/* React Router Nedir ?
+ * React Router, React uygulamalarinda yonlendirme olusturmak icin
+ * kullanilan reaksiyonun uzerine insa edilmis bir yonlendirme kutuphanesidir
+ *
+ * Dinamik Yonlendirme - Single Page & Statik Yonlendirme - MultiPage Uygulamalar
+ * Sadece bir adet index.html sayfamiz var.
+ *
+ * Avantajlar ??
+ * Sayfa yenilenmesi yok !
+ * Beyaz bir ekranin veya bos bir sayfanin flasi onlenir.
+ * Daha sorunsuz kullanici deneyimi
+ * React Router, kullanicinin uygulamanin dogru gorunumunu korurken
+ * geri butonu ve yenileme sayfasi gibi tarayici islevlerini kullanmasina da olanak tanir
+ *
+ * Gerekli Kurulumlar
+ * npm install react-router-dom
+ */
